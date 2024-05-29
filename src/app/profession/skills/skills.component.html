@@ -1,0 +1,30 @@
+<h1 class="font-bold text-center text-xl mt-20 mb-7">Professional Skills</h1>
+  <div class="flex p-4 justify-around shadow-xl bg-white w-9/12 ml-52">
+    <div>
+      <ng-container *ngFor="let item of skills; let i = index">
+        <ng-container *ngIf="i <= 2">
+          <div class="w-72 mb-4">
+            <div class="flex justify-between">
+              <p>{{item.name}}</p>
+              <span>{{item.level}}</span>
+            </div>
+            <progress class="progress progress-secondary w-72 h-2" [value]="item.level" max="100"></progress>
+          </div>
+        </ng-container>
+      </ng-container>
+    </div>
+    <div>
+      <ng-container *ngFor="let item of skills; let i = index">
+        <ng-container *ngIf="i > 2">
+          <div class="w-72 mb-4">
+            <div class="flex justify-between">
+              <p>{{item.name}}</p>
+              <span>{{item.level}}</span>
+            </div>
+            <progress class="progress progress-secondary w-72 h-2" [value]="item.level" max="100"></progress>
+          </div>
+        </ng-container>
+      </ng-container>
+    </div>
+  </div>
+  

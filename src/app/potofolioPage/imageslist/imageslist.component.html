@@ -1,0 +1,6 @@
+<h1 class="font-bold text-center text-xl mt-20 mb-10 ">Portfolio</h1>
+<div class="w-9/12 grid grid-cols-2 gap-4 ml-64">
+  <div *ngFor="let item of images" class="flex">
+    <img src="{{item.image}}" alt="laptops" class="rounded-xl shadow-lg">
+  </div>
+</div>

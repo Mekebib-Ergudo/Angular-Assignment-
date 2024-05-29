@@ -1,0 +1,11 @@
+<h1 class="font-bold text-center text-xl my-6"> Education</h1>
+<div *ngFor="let item of educations" class="mb-5 flex flex-row justify-center shadow-lg bg-white w-9/12 ml-52 rounded-lg">
+  <div class="p-4 bg-purple-300 w-80">
+    <p>{{item.duration}}</p>
+    <h1 class="font-bold">{{item.company}}</h1>
+  </div>
+  <div class="p-4">
+    <h1 class="font-bold">{{item.title}}</h1>
+    <p>{{item.description}}</p>
+  </div>
+</div>

@@ -1,0 +1,24 @@
+<!-- Contact Me Section -->
+<section class="py-10 ">
+  <div class="container mx-auto px-4">
+      <h1 class=" font-bold mb-6 text-center">Contact Me</h1>
+      <div class="bg-white rounded-lg shadow-md p-6">
+          <form *ngFor="let item of contactMe">
+              <div class="mb-4">
+                  <label class="block text-gray-700 text-sm font-bold mb-2">{{item.name}}:</label>
+                  <input  class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" >
+              </div>
+          </form>
+          <div class="flex items-center justify-between">
+            <button type="submit" class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
+                Send
+            </button>
+        </div>
+      </div>
+      <div class="mt-8 text-center">
+          <p><strong>Address:</strong> 123 City Road, New York, U.S.A</p>
+          <p><strong>Phone:</strong> +1 123 456 7890</p>
+          <p><strong>Email:</strong> anthony@company.com</p>
+      </div>
+  </div>
+</section>
